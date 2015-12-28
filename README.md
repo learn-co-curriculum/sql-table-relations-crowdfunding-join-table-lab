@@ -40,7 +40,7 @@ end
 ###Create Our Grocery Table
 
 ```sql
-CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, amount INTEGER, aisle INTEGER);
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER);
 
 INSERT INTO groceries VALUES (1, "Apples", 2, 1);
 INSERT INTO groceries VALUES (2, "Oranges", 4, 2);
@@ -51,11 +51,11 @@ INSERT INTO groceries VALUES(3, "Peaches", 6, 3);
 ###Grocery Schema
 
 ```
-id                 name        amount      aisle       
+id                 name        quantity      aisle       
 ------------    ----------  ----------  ----------  
-1                Apples          6          1
-2                Oranges         1          2    
-3                Bananas         3          3   
+1                Apples          2          1
+2                Oranges         4          2    
+3                Bananas         6          3   
 ```
 
 ###SUM
