@@ -40,7 +40,7 @@ end
 ###Create Our Grocery Table
 
 ```sql
-CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, amount INTEGER, aisle INTEGER);
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER);
 
 INSERT INTO groceries VALUES (1, "Apples", 2, 1);
 INSERT INTO groceries VALUES (2, "Oranges", 4, 2);
@@ -51,11 +51,11 @@ INSERT INTO groceries VALUES(3, "Peaches", 6, 3);
 ###Grocery Schema
 
 ```
-id                 name        amount      aisle       
+id                 name        quantity      aisle       
 ------------    ----------  ----------  ----------  
-1                Apples          6          1
-2                Oranges         1          2    
-3                Bananas         3          3   
+1                Apples          2          1
+2                Oranges         4          2    
+3                Bananas         6          3   
 ```
 
 ###SUM
@@ -91,3 +91,5 @@ aisle	  SUM(quantity)
 * [Seldom Blog](http://blog.seldomatt.com/) - [About SQL Joins: The 3 Ring Binder Model](http://blog.seldomatt.com/blog/2012/10/17/about-sql-joins-the-3-ring-binder-model/)
 * [Coding Horror](http://blog.codinghorror.com/) - [A Visual Explanation of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 * [Geeky is Awesome](http://geekyisawesome.blogspot.com/) - [SQL Joins Tutorial](http://geekyisawesome.blogspot.com/2011/03/sql-joins-tutorial.html)
+
+<a href='https://learn.co/lessons/sql-crowdfunding-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
