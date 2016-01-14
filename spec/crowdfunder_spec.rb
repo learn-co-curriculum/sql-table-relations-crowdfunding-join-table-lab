@@ -11,27 +11,27 @@ describe "crowdfunder sql" do
       @sql_runner.execute_create_sql
     end
 
-    it "creates a project table with an id as a primary key" do
+    it "creates a projects table with an id as a primary key" do
       expect(@db.execute("PRAGMA table_info(projects);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
     end
 
-    it "creates a project table with a title field" do
+    it "creates a projects table with a title field" do
       expect{@db.execute("SELECT title FROM projects;")}.to_not raise_exception
     end
 
-    it "creates a project table with a category field" do
+    it "creates a projects table with a category field" do
       expect{@db.execute("SELECT category FROM projects;")}.to_not raise_exception
     end
 
-    it "creates a project table with a funding_goal field" do
+    it "creates a projects table with a funding_goal field" do
       expect{@db.execute("SELECT funding_goal FROM projects;")}.to_not raise_exception
     end
 
-    it "creates a project table with a start_date field" do
+    it "creates a projects table with a start_date field" do
       expect{@db.execute("SELECT start_date FROM projects;")}.to_not raise_exception
     end
 
-    it "creates a project table with a end_date field" do
+    it "creates a projects table with a end_date field" do
       expect{@db.execute("SELECT end_date FROM projects;")}.to_not raise_exception
     end
 
