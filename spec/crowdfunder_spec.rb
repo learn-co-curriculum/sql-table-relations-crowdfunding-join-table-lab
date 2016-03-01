@@ -103,7 +103,7 @@ describe "crowdfunder sql" do
     end
 
     it '#selects_the_titles_of_all_projects_that_have_met_their_funding_goal' do
-      expect(@db.execute(selects_the_titles_of_all_projects_that_have_met_their_funding_goal)).to eq([["My book on SQL", 0], ["The next Inna-Gadda-Davida", -142]])
+      expect(@db.execute(selects_the_titles_of_all_projects_that_have_met_their_funding_goal)).to eq([["My book on SQL", 0], ["The next Inna-Gadda-Davida", 142]])
     end
 
     it '#selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount' do
@@ -119,3 +119,4 @@ describe "crowdfunder sql" do
     end
   end
 end
+
