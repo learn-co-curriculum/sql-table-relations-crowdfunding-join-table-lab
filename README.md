@@ -82,8 +82,8 @@ SELECT aisle, SUM(quantity) FROM groceries GROUP BY aisle ORDER BY SUM(quantity)
 ```sql
 aisle	  SUM(quantity)
 -------  --------------
-1	           1
-2	           3
+1	           2
+2	           4
 3	           6
 ```
 
@@ -93,3 +93,5 @@ aisle	  SUM(quantity)
 * [Geeky is Awesome](http://geekyisawesome.blogspot.com/) - [SQL Joins Tutorial](http://geekyisawesome.blogspot.com/2011/03/sql-joins-tutorial.html)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-crowdfunding-lab' title='Crowdfunding SQL'>Crowdfunding SQL</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sql-crowdfunding-lab'>SQL Crowdfunding Lab</a> on Learn.co and start learning to code for free.</p>
