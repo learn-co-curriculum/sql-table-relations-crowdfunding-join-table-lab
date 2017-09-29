@@ -47,19 +47,19 @@ describe "crowdfunder sql" do
       expect{@db.execute("SELECT age FROM users;")}.to_not raise_exception
     end
 
-    it "creates a pledge table with an id as a primary key" do
+    it "creates a pledges table with an id as a primary key" do
       expect(@db.execute("PRAGMA table_info(pledges);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
     end
 
-    it "creates a pledge table with an amount field" do
+    it "creates a pledges table with an amount field" do
       expect{@db.execute("SELECT amount FROM pledges;")}.to_not raise_exception
     end
 
-    it "creates a pledge table with a user_id field" do
+    it "creates a pledges table with a user_id field" do
       expect{@db.execute("SELECT user_id FROM pledges;")}.to_not raise_exception
     end
 
-    it "creates a pledge table with a project_id field" do
+    it "creates a pledges table with a project_id field" do
       expect{@db.execute("SELECT project_id FROM pledges;")}.to_not raise_exception
     end
 
