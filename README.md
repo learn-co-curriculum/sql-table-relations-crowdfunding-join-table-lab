@@ -3,8 +3,6 @@
 ## Objectives
 Learn to create tables, insert data, and use `JOIN`s to answer the questions.
 
-Mongo is aqwesome
-
 ## Create Tables
 In the `create.sql` file, model your tables. You should have a table for projects, users, and pledges.
 
