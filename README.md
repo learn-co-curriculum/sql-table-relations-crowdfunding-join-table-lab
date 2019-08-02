@@ -27,7 +27,7 @@ id                 name        quantity      aisle
 ------------    ----------  ----------  ----------  
 1                Apples          2          1
 2                Oranges         4          2
-3                Bananas         6          3
+3                Peaches         6          3
 ```
 
 ### `SUM`
