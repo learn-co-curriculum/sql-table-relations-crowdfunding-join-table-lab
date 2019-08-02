@@ -20,7 +20,15 @@ INSERT INTO groceries VALUES (2, "Oranges", 4, 2);
 INSERT INTO groceries VALUES(3, "Peaches", 6, 3);
 ```
 
-### Grocery Schema
+### Selecting Data from the Grocery Table
+
+Given the example SQL above, we'd be able to run a query like
+
+```sql
+SELECT * FROM groceries;
+```
+
+And get back the inserted data (represented in a table below)
 
 ```text
 id                 name        quantity      aisle
