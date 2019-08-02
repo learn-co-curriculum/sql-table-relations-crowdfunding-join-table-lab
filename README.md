@@ -8,8 +8,7 @@
 ## Identify Table Example
 
 `SQL` is a programming language that allows you to "nest" statements inside each
-other. Let's quickly take a look at an example of that does this with grocery
-data.
+other. Let's quickly consider an example using grocery data.
 
 ### Create a Grocery Table
 
@@ -65,6 +64,14 @@ aisle    SUM(quantity)
 3           6
 ```
 
+## Instructions
+
+In this lab, you have two tasks - first, you will need to create three tables in
+`lib/create.sql`, and populate them with data in `lib/insert.sql`. Then, you
+will need to write the necessary SQL statements inside the methods in
+`lib/sql_queries.rb` that would allow you to query data from your newly created
+tables.
+
 ## Create New Table, Records and Queries
 
 Now we're going to create a schema based on the following information:
@@ -84,15 +91,9 @@ Within the `insert.sql` file, insert 10 projects, 20 users, and 30 pledges into 
 
 ### Write the Queries
 
-Write the following queries in SQL. You'll use different kinds of SQL joins to
-arrive at the answers for most. Write your queries in the `lib/sql_queries` file
-like the example below:
+Write SQL queries as strings in `lib/sql_queries` in each of the provided methods.
 
-```ruby
-def select_category_from_projects
-  "SELECT category FROM projects;"
-end
-```
+Run `learn` as you go and read the test messages for additional guidance.
 
 ## Resources
 
