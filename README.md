@@ -101,7 +101,7 @@ Within the `insert.sql` file, insert 10 projects, 20 users, and 30 pledges into 
 
 Write SQL queries as strings in `lib/sql_queries` in each of the provided methods.
 
-Run `learn` as you go and read the test messages for additional guidance.
+Run `learn test` as you go and read the test messages for additional guidance.
 
 ## Resources
 
